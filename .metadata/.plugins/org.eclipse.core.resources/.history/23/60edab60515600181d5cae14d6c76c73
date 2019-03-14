@@ -1,0 +1,9 @@
+
+package test;
+
+public class Whale extends Mammal{
+	
+	public static void main(String[] args) {
+		new Whale().move();
+	}
+}

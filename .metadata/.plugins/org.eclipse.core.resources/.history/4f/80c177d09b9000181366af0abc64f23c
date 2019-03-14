@@ -1,0 +1,31 @@
+package com.test.two;
+
+public class Student {
+	
+	public String name = "21";
+	
+	public void print(String name) {
+		System.out.println(1231321);
+	}
+	
+	public Student() {
+		
+	}
+	
+	private Student(String name) {
+		System.out.println("sssssssssssss");
+	}
+	
+//	private int age;
+//	private String name;
+//	
+//	public Student(String name) {
+//		this.name = name;
+//	}
+//	
+//	public void printfInfo(String address) {
+//		System.out.println(name+":"+age+":"+address);
+//	}
+//	
+	
+}

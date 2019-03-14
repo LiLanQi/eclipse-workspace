@@ -1,0 +1,16 @@
+package com.test.csdn;
+import java.util.ArrayList;
+import java.lang.ReflectiveOperationException;
+
+public class ReflectionTest {
+
+	public static void main(String[] args) {
+		
+		ArrayList s = new ArrayList<>();
+		for(int i=1;i<=5;i++) {
+			s.add(i*i);
+		}
+		
+		System.out.println(new ObjectAnalyzer().toString(s));
+	}
+}

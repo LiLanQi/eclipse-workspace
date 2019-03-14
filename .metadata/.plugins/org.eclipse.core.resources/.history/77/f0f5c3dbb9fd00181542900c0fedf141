@@ -1,0 +1,8 @@
+
+public class ASDSAD {
+
+	@Test
+	public void printfd() {
+		System.out.println("aaaaa");
+	}
+}

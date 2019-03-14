@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>百度一下</title>
+	</head>
+	<body>
+		<form action="">
+				<input type="hidden" name="id" value "1212-5645-65456"/>
+				<input name="user_name" placeholder="请输入用户名"   value="222" readonly="readonly" disabled="disabled"/>
+				<input type="text" name="password" placeholder="请输入密码" value="11111" /><br />
+				<textarea name="summary" rows="12" cols="12"> </textarea>
+				<select name="grade">
+					<option value="1">一年级</option>	
+					<option value="2">二年级</option>
+					<option value="3">三年级</option>
+					<option value="4" selected="selected">四年级</option>
+				</select>
+				
+				<input type="file" name="picture" multiple="multiple"/>
+				<input type="radio" name="sex" value="0" id="male" /><label for="male" >男</label>
+				<input type="radio" name="sex" value="1" id="female" checked="checked"/><label for="female" >女</label><br />
+				
+				<input type="checkbox" name="hobby" value="0" id="zq"/><label for="zq">足球</label>
+				<input type = "checkbox" name="hobby" values="1" id="ppq"/><label for="ppq">乒乓球</label>
+				<input type="submit" value="提交"/ >
+				<input type="reset"/>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+package test;
+
+public class Test11 {
+
+	public static void main(String[] args) {
+		String name = "李岚祺111";
+		String str = new String("李岚祺");//创建俩个空间
+		String addr = "李岚祺";
+		System.out.println(name.indexOf("祺"));
+		System.out.println(name.lastIndexOf("1"));		
+		System.out.println(name.charAt(1));
+	}
+}

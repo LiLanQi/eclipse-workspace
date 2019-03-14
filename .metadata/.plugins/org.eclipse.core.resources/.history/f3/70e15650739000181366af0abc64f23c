@@ -1,0 +1,18 @@
+package com.test.two;
+
+public class Student {
+	
+	String name;
+	
+	public void print() {
+		System.out.println(name);
+	}
+	
+	public Student() {
+		
+	}
+	
+	private Student(String name) {
+		
+	}
+}

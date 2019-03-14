@@ -1,0 +1,12 @@
+package practice;
+
+public class TestUnsunchBank {
+	private final double[] accounts;
+}
+
+class Bank {
+	private final double[] accounts;
+	{
+		
+	}
+}

@@ -1,0 +1,15 @@
+package com.ghj.person;
+
+public class Person {
+	
+	protected static int age=10;
+	
+	public Person(){
+		super();
+		System.out.println("鏋勯�犳柟娉�1");
+	}
+	
+	public static void show(){
+		System.out.println("鏂规硶");
+	}
+}

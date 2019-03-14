@@ -1,0 +1,25 @@
+import java.sql.SQLException;
+
+import org.apache.commons.dbutils.QueryRunner;
+import org.junit.Before;
+import org.junit.Test;
+
+public class shopDao {
+
+	private QueryRunner queryRunner;
+	
+	@Before
+	public void init() {
+		queryRunner = new QueryRunner(DBUtil.getDruidDataSource());
+	}
+	
+	@Test
+	public void insert() {
+		try {
+			queryRunner.update("insert into goods values (goods_id = '"++"')");
+			System.out.println("修改成功12");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+}

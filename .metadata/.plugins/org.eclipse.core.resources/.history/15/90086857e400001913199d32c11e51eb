@@ -1,0 +1,10 @@
+package com.lilanqi.SpringTest;
+
+public class MainTest {
+
+	public static void main(String[] args) {
+		
+		Apple apple = FruitFactory.getFruit("apple");
+	}
+
+}

@@ -1,0 +1,7 @@
+
+public class JunitTest {
+
+	public void printf() {
+		System.out.println(123);
+	}
+}

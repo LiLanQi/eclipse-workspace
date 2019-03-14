@@ -1,0 +1,7 @@
+
+public class ASDSAD {
+
+	public void printfd() {
+		System.out.println("aaaaa");
+	}
+}

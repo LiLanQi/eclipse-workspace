@@ -1,0 +1,5 @@
+package com.zzxtit.spring.aop;
+
+public class BacnServiceImpl {
+
+}

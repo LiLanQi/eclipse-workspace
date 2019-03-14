@@ -1,0 +1,15 @@
+package com.lilanqi.SpringTest;
+
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class IOCTest {
+
+	@Test
+	public void myTest() {
+		ApplicationContext ap = new ClassPathXmlApplicationContext("config/applicationContext.xml");
+		
+		ap.getBean("apple", Apple.class);
+	}
+}

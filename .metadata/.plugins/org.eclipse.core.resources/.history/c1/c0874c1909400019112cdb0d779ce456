@@ -1,0 +1,22 @@
+package com.zzxtit.spring.aop.xml;
+
+import org.junit.Before;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.zzxtit.spring.aop.BankService;
+
+public class TestXMLAOp {
+	
+	private ApplicationContext ioc;
+	
+	@Before
+	public void initIoc() {
+		ioc = new ClassPathXmlApplicationContext("config/applicationContextAop.xml");
+	}
+	
+	public void test() {
+		BankService bs = ioc.getBean("bankService", BankService.class);
+	}
+
+}

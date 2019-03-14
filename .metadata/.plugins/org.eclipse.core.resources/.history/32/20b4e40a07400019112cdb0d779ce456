@@ -1,0 +1,16 @@
+package com.zzxtit.spring.aop;
+
+public class BankServiceImpl implements BankService{
+
+	@Override
+	public void depositMoney(String mony) {
+		
+	}
+
+	@Override
+	public void withdraw(String money) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

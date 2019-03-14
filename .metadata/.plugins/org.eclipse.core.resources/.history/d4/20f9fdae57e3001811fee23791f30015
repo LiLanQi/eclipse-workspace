@@ -1,0 +1,60 @@
+package com.lilanqi.goods;
+
+import java.math.BigDecimal;
+import java.util.Date;
+
+public class Goods {
+	
+	private int type;
+	private String barCode;
+	private String producer;
+	private String goodsName;
+	private Date expriDate;
+	private Date prodectDate;
+	private BigDecimal price;
+	
+	public String getGoodsName() {
+		return goodsName;
+	}
+	public void setGoodsName(String goodsName) {
+		this.goodsName = goodsName;
+	}
+	public String getBarcode() {
+		return barCode;
+	}
+	public void setBarcode(String barcode) {
+		this.barCode = barcode;
+	}
+	public Date getProdectDate() {
+		return prodectDate;
+	}
+	public void setProdectDate(Date prodectDate) {
+		this.prodectDate = prodectDate;
+	}
+	public String getProducer() {
+		return producer;
+	}
+	public void setProducer(String producer) {
+		this.producer = producer;
+	}
+	public Date getExpriDate() {
+		return expriDate;
+	}
+	public void setExpriDate(Date expriDate) {
+		this.expriDate = expriDate;
+	}
+	public BigDecimal getPrice() {
+		return price;
+	}
+	public void setPrice(BigDecimal price) {
+		this.price = price;
+	}
+	public int getType() {
+		return type;
+	}
+	public void setType(int type) {
+		this.type = type;
+	}
+	
+	
+}

@@ -1,0 +1,14 @@
+package nyny;
+
+import org.junit.Test;
+
+public class aaa {
+
+	public static void main(String[] args) {
+		System.out.println(aaa);
+	}
+	
+	public void mm() {
+		System.out.println(123);
+	}
+}

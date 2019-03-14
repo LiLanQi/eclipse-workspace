@@ -1,0 +1,32 @@
+package com.lilanqi.service;
+
+import java.sql.SQLException;
+
+import org.apache.commons.beanutils.BeanUtils;
+
+import com.lilanqi.dao.GoodsDao;
+import com.lilanqi.goods.Goods;
+import com.lilanqi.order.OrderItem;
+
+public class OrderService {
+
+	private GoodsDao gd = new GoodsDao();
+	
+	public OrderItem getOrderItemByBarcode(String barCode) throws Exception {
+		OrderItem oi = new OrderItem();
+		Goods goods = gd.getGoodsByBarCode(barCode);
+		System.out.println(goods.toString());
+		BeanUtils.copyProperties(oi, goods);
+		System.out.println(oi.toString());
+		
+		return oi;
+	}
+	
+/*	public void deleteOrderItemByBarcode(String barCode) throws SQLException {
+		gd.deleteGoodsByBarCode(barCode);
+	}*/
+	
+	public void payMentItem(OrderItem oi) throws SQLException {
+		gd.change(oi);
+	}
+}

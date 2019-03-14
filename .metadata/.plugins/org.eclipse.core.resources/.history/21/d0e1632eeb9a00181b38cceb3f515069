@@ -1,0 +1,8 @@
+package com.xt.imp;
+
+public class UserInfoService implements IUserInfoService{
+
+	private IUserInfoDao UserInfoDao = new UserInfoDao();
+
+
+}

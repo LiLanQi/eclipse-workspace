@@ -1,0 +1,31 @@
+package test;
+
+public class HelloWorld {
+	
+	static{
+		int age = 10;
+		System.out.println(age);
+	}
+	
+//	int age;
+//	static boolean name;
+//	static double number;
+	
+//	static {
+//		System.out.println("¾²Ì¬´úÂë¿é");
+//	}
+//	{
+//		System.out.println("·Ç¾²Ì¬´úÂë¿é");
+//	}
+	public static void main(String[] args) {
+//		new HelloWorld();
+//		new HelloWorld();
+//		System.out.println(new HelloWorld().age);
+//		System.out.println(number);
+//		System.out.println(name);
+		int age = 15;
+		System.out.println(age);
+	}
+	
+
+}

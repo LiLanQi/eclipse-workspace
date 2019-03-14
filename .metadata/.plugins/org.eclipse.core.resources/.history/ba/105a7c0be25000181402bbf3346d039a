@@ -1,0 +1,22 @@
+package test;
+
+public class Child {
+
+	int age = 10;
+	
+	static {
+		System.out.println(new Child().age);
+	}
+	
+	static void print() {
+		System.out.println(new Child().age);
+	}
+	
+	void print(int a) {
+		System.out.println(age);
+	}
+	
+	public static void main(String[] args) {
+
+	}
+}

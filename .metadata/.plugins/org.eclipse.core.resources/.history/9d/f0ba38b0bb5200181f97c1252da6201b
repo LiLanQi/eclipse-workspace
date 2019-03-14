@@ -1,0 +1,21 @@
+package test;
+
+public class Student {
+
+	String name;
+	
+	void doHomework(){
+		String name = "ll";
+		System.out.println(this.name+"正在做作业.......");
+	}
+
+	void speak(){
+		this.doHomework();
+		System.out.println(name+"正在说话......");
+	}
+	
+	public static void main(String[] args) {
+		Student student = new Student();
+		student.speak();
+	}
+}

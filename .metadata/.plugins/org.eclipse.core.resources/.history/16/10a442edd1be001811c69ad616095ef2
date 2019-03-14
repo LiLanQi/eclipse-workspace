@@ -1,0 +1,22 @@
+package practice;
+
+public class TestThreat {
+	public static void main(String[] args) {
+		Runnable r = ()->{
+			System.out.println("线程启动");
+			while(!Thread.currentThread().isInterrupted()) {
+				System.out.println("线程没有被中断");
+				try {
+					Thread.currentThread().sleep(1000);
+					Thread.currentThread().interrupt();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				
+			}
+		};
+		
+		Thread thread = new Thread(r);
+		thread.start();
+	}
+}

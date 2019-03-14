@@ -1,0 +1,21 @@
+package com.test.two;
+import java.lang.reflect.Constructor;
+
+class Student {
+	
+	Student() {
+		
+	}
+}
+
+public class Test3 {
+	public static void main(String[] args) throws Exception {
+		Class<Student> clazz = Student.class;
+		Constructor<?>[] constructorArray = clazz.getConstructors();
+		System.out.println(constructorArray.length);//输出0
+		
+		Constructor<Student> constructor = clazz.getConstructor();//该行代码出现“java.lang.NoSuchMethodException: Student.<init>()”异常
+		System.out.println(constructor.getName());
+	}
+}
+

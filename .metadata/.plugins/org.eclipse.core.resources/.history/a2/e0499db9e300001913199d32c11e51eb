@@ -1,0 +1,12 @@
+package com.lilanqi.SpringTest.first;
+
+public class Banana {
+	
+	private String type;
+
+	private String color;
+	
+	public void desc() {
+		System.out.println("banana");
+	}
+}

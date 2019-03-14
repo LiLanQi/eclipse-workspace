@@ -1,0 +1,11 @@
+package nyny;
+
+import org.junit.Test;
+
+public class LOLOLO {
+
+	@Test
+	public void mm() {
+		System.out.println(123);
+	}
+}

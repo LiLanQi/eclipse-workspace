@@ -1,0 +1,12 @@
+package test;
+
+public class Test {
+	
+	int i=10;
+	static{
+		new Test().i=9;
+	}
+	public static void main(String[] args) {
+		System.out.println(new Test().i);//ÎªÊ²Ã´Êä³ö9
+	}
+}

@@ -1,0 +1,6 @@
+import org.apache.commons.dbutils.QueryRunner;
+
+public class shopDao {
+
+	private QueryRunner queryRunner;
+}

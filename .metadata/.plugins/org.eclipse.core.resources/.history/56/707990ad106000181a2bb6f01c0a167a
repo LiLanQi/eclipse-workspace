@@ -1,0 +1,22 @@
+package com.baidu;
+
+public class Test6 {
+	
+	
+
+	
+	@FunctionalInterface
+	interface IMammal{
+		void move();
+	}
+	
+	public static void main(String[] args) {
+		IMammal mammal = new IMammal(){
+			public void move() {
+				System.out.println("1111111111");
+			}
+		};
+	}
+}
+
+

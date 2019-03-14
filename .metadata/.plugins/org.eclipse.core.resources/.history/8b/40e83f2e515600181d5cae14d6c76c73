@@ -1,0 +1,11 @@
+package test;
+
+public class Bat extends Mammal{
+
+	publci void move() {
+		System.out.println("òùòğ¿¿ÒíÒÆ¶¯....");
+	}
+	public static void main(String[] args) {
+		new Bat().move();
+	}
+}

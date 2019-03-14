@@ -1,0 +1,15 @@
+package test;
+
+public class Test11 {
+
+	public static void main(String[] args) {
+		String name = "李岚祺111";
+		String str = new String("李岚祺");
+		String addr = "李岚祺";
+		char []charArray = name.toCharArray();
+		for (char c : charArray) {
+			System.out.println(c);
+		}
+		System.out.println(name.substring(0,3)==addr);
+	}
+}

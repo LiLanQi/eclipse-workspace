@@ -1,0 +1,74 @@
+package com.lilanqi.order;
+
+import java.math.BigDecimal;
+
+public class OrderItem {
+	
+	private int id;
+	
+	private int orderNo;
+
+	private String barCode;
+	
+	private String goodsName;
+	
+	private BigDecimal price;
+	
+	private int goodsCount;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getOrderNo() {
+		return orderNo;
+	}
+
+	public void setOrderNo(int orderNo) {
+		this.orderNo = orderNo;
+	}
+
+	public String getBarCode() {
+		return barCode;
+	}
+
+	public void setBarCode(String barCode) {
+		this.barCode = barCode;
+	}
+
+	public String getGoodsName() {
+		return goodsName;
+	}
+
+	public void setGoodsName(String goodsName) {
+		this.goodsName = goodsName;
+	}
+
+	public BigDecimal getPrice() {
+		return price;
+	}
+
+	public void setPrice(BigDecimal price) {
+		this.price = price;
+	}
+
+	public int getGoodsCount() {
+		return goodsCount;
+	}
+
+	public void setGoodsCount(int goodsCount) {
+		this.goodsCount = goodsCount;
+	}
+
+	@Override
+	public String toString() {
+		return "OrderItem [id=" + id + ", orderNo=" + orderNo + ", barCode=" + barCode + ", goodsName=" + goodsName
+				+ ", price=" + price + ", goodsCount=" + goodsCount + "]";
+	}
+	
+	
+}

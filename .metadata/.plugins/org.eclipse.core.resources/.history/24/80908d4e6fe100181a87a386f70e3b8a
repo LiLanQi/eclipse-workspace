@@ -1,0 +1,15 @@
+package com.lilanqi.service;
+
+import com.lilanqi.dao.GoodsDao;
+import com.lilanqi.goods.Goods;
+import com.lilanqi.order.OrderItem;
+
+public class OrderService {
+
+	private GoodsDao gd = new GoodsDao();
+	
+	public OrderItem getOrderItemByBarcode(String barCode) {
+		OrderItem oi = new OrderItem();
+		Goods goods = gd.getGoodsByBarCode(barCode);
+	}
+}

@@ -1,0 +1,8 @@
+package com.lilanqi.SpringTest;
+
+public class Fruit {
+
+public void desc() {
+		
+	}
+}

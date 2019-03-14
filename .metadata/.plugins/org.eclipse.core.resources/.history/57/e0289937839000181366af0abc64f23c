@@ -1,0 +1,18 @@
+package com.test.two;
+
+public class Student {
+	
+	public String name = "21";
+	
+	private void print(String name) {
+		System.out.println(1231321);
+	}
+	
+	public Student() {
+		System.out.println(1231321);
+	}
+	
+	public Student(String name) {
+		
+	}
+}

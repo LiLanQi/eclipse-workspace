@@ -1,0 +1,15 @@
+package com.lilanqi.jsptest;
+
+import com.alibaba.druid.pool.DruidDataSource;
+
+public class DBUtil {
+	static DruidDataSource druidDataSource;
+	private static final ORACAL_URL = "";
+	private static final ORACAL_USERNAME = "";
+	private static final ORACAL_PASSWORD = "";
+	private static final DRIVER = "";
+	
+	static {
+		
+	}
+}

@@ -1,0 +1,110 @@
+package test.temp;
+
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class StudentManagement {
+	
+	static Set<Student> set = new HashSet<>();
+	static Scanner scanner = new Scanner(System.in);
+	
+	public static boolean add() {
+		System.out.println("输入id");
+		String id = scanner.next();
+		System.out.println("输入姓名");
+		String name = scanner.next();
+		return set.add(new Student(id,name));
+	}
+	
+	public static boolean delete() {
+		System.out.println("输入删除的学号");
+		String id = scanner.nextLine();
+		Student stu = new Student(id);
+		return set.remove(stu);
+	}
+	
+	public static boolean update() {
+		System.out.println("请输入要修改学生的学号");
+		@SuppressWarnings("resource")
+		Scanner scanner = new Scanner(System.in);
+		String id = scanner.nextLine();
+		Student student = new Student(id);
+		if (set.contains(student)) {
+			System.out.println("请输入要修改学生的姓名");
+			scanner = new Scanner(System.in);
+			String name = scanner.nextLine();
+			set.remove(student);
+			student = new Student(id, name);
+			return set.add(student);
+		} else {
+			System.out.println("查无此人，无法修改");
+			return false;
+		}
+	}
+	
+	public static boolean select() {
+		ystem.out.println("请输入要查找学生的学号");
+		@SuppressWarnings("resource")
+		Scanner scanner = new Scanner(System.in);
+		String id = scanner.nextLine();
+		Student student = new Student(id);
+		if(set.contains(stu)) {
+			for(Student student : set) {
+				if(student.id==id) {
+					student.toString();
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+
+	public static void main(String args[]) {
+	
+		Scanner in = new Scanner(System.in);
+		System.out.println("欢迎来到学生管理系统");
+		while(true) {
+			System.out.println("1.增加学生信息");
+			System.out.println("2.删除学生信息");
+			System.out.println("3.修改学生信息");
+			System.out.println("4.查找学生信息");
+			System.out.println("0.退出系统");
+			int message = in.nextInt();
+			if(message==0)
+				break;
+			switch(message) {
+				case 1:
+					if(add()) {
+						System.out.println("成功");
+					}else {
+						System.out.println("失败");
+					}
+					break;
+				case 2:
+					if(delete()) {
+						System.out.println("成功");
+					}else {
+						System.out.println("失败");
+					}
+					break;
+				case 3:
+					if(update()) {
+						System.out.println("成功");
+					}else {
+						System.out.println("失败");
+					}
+					break;
+				case 4:
+					if(select()) {
+						System.out.println("成功");
+					}else {
+						System.out.println("失败");
+					}
+					break;
+				default:
+					break;
+				}
+			}
+		}
+}

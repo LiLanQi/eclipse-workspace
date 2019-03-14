@@ -1,0 +1,17 @@
+package test.temp;
+
+public class Test {
+
+	private static IUserInfoService userInfoService = new  UserInfoService();
+	
+	public static void main(String[] args) {
+
+		String username = "111";
+		String password = "111";
+		if(userInfoService.login(username,password)) {
+			System.out.println("成功");
+		}else {
+			System.out.println("失败");
+		}
+	}
+}

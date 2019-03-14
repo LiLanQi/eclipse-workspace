@@ -1,0 +1,22 @@
+package com.test.two;
+
+public class Test {
+	
+	public static void main(String[] args) {
+////		Color colors[] = Color.values();
+////		for (Color color : colors) {
+////			System.out.println(color.getId()+":"+color.getName());
+////		}
+//		Color.test(Color.GREEN);
+		try {
+			Class clazz = Class.forName("com.test.two.Student");
+			clazz = Student.class;
+			System.out.println(clazz);
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+	}		
+}
+
+

@@ -1,0 +1,15 @@
+package com.lilanqi.dao;
+
+import org.apache.commons.dbutils.DbUtils;
+import org.apache.commons.dbutils.QueryRunner;
+
+import com.lilanqi.goods.Goods;
+
+public class GoodsDao {
+	
+	private QueryRunner qr = new QueryRunner(DbUtils.);
+
+	public Goods getGoodsByBarCode(String barCode) {
+		
+	}
+}

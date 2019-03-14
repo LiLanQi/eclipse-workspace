@@ -1,0 +1,8 @@
+package com.lilanqi;
+
+public class mavenTest {
+
+	public void printInfo() {
+		System.out.println("junit 测试");
+	}
+}

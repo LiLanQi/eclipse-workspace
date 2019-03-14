@@ -1,0 +1,76 @@
+package com.test.two;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+
+public class Test {
+	
+	public static void main(String[] args) {
+////		Color colors[] = Color.values();
+////		for (Color color : colors) {
+////			System.out.println(color.getId()+":"+color.getName());
+////		}
+//		Color.test(Color.GREEN);
+//		try {
+//			Class clazz = Class.forName("com.test.two.Student");
+//			clazz = Student.class;
+//			clazz = Integer.class;
+//			clazz = Byte.TYPE.getSuperclass();
+//			System.out.println(clazz);
+//			clazz = Short.TYPE;
+//			clazz = Long.TYPE;
+//			clazz = Boolean.TYPE;
+//			clazz = Double.TYPE;
+//			clazz = Float.TYPE;
+//			clazz = Character.TYPE;
+//			
+//			String[] str = new String[5];
+//			clazz = String[].class;
+//			
+//			clazz = new Student().getClass();
+//	
+//		} catch (ClassNotFoundException e) {
+//			e.printStackTrace();
+//		}
+		
+		try {
+			Class clazz = Class.forName("com.test.two.Student");
+//			Constructor [] constructors = clazz.getDeclaredConstructors();
+//			for(Constructor constructor:constructors) {
+//				System.out.println(constructor);
+//			}
+//			Constructor constructor = clazz.getConstructor();
+//			System.out.println(constructor);
+//			Constructor constructor1 = clazz.getDeclaredConstructor(String.class);
+//			System.out.println(constructor1);
+//			constructor1.setAccessible(true);
+//			Object obj = constructor1.newInstance("xiaowang");
+//			System.out.println(obj);
+			Class c = clazz.getDeclaringClass();
+			System.out.println(c);
+			int a = clazz.getModifiers();
+			System.out.println(a);
+			
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+//		} catch (NoSuchMethodException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} catch (SecurityException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} catch (InstantiationException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} catch (IllegalAccessException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} catch (IllegalArgumentException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} catch (InvocationTargetException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+		}
+	}		
+}

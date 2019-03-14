@@ -1,0 +1,98 @@
+package com.lilanqi.test;
+
+public class Student {
+
+	private String stuNo;
+	
+	private String stuName;
+	
+	private int gender;
+	
+	private int age;
+	
+	private int score;
+	
+	public Student() {
+		
+	}
+
+	public Student(String stuNo, String stuName, int gender, int age, int score) {
+		super();
+		this.stuNo = stuNo;
+		this.stuName = stuName;
+		this.gender = gender;
+		this.age = age;
+		this.score = score;
+	}
+
+	/**
+	 * @return the stuNo
+	 */
+	public String getStuNo() {
+		return stuNo;
+	}
+
+	/**
+	 * @param stuNo the stuNo to set
+	 */
+	public void setStuNo(String stuNo) {
+		this.stuNo = stuNo;
+	}
+
+	/**
+	 * @return the stuName
+	 */
+	public String getStuName() {
+		return stuName;
+	}
+
+	/**
+	 * @param stuName the stuName to set
+	 */
+	public void setStuName(String stuName) {
+		this.stuName = stuName;
+	}
+
+	/**
+	 * @return the gender
+	 */
+	public int getGender() {
+		return gender;
+	}
+
+	/**
+	 * @param gender the gender to set
+	 */
+	public void setGender(int gender) {
+		this.gender = gender;
+	}
+
+	/**
+	 * @return the age
+	 */
+	public int getAge() {
+		return age;
+	}
+
+	/**
+	 * @param age the age to set
+	 */
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	/**
+	 * @return the score
+	 */
+	public int getScore() {
+		return score;
+	}
+
+	/**
+	 * @param score the score to set
+	 */
+	public void setScore(int score) {
+		this.score = score;
+	}
+	
+}

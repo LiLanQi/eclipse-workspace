@@ -1,0 +1,26 @@
+package com.zzxtit.spring.aop.proxy;
+
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+
+import org.mockito.invocation.Invocation;
+
+public class ServiceProxy implements InvocationHandler{
+
+	private Object target;
+	
+	@Override
+	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+		System.out.println("方法" + method.getName() + "开始操作");
+		Object returnValue = method.invoke(target, args);
+		System.out.println("操作结束");
+		return returnValue;
+	}
+
+	public Object createProxyInstance(Object obj) {
+		target = obj;
+		return Proxy.newProxyInstance(target.getClass().getClassLoader(), target.getClass().getInterfaces(), this);
+	}
+	
+}

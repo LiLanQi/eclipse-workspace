@@ -1,0 +1,11 @@
+package com.test.csdn;
+
+import com.test.csdn.Body.Heart;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Heart heart = new Body.Heart();
+		heart.beat();
+	}
+}

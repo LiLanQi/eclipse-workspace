@@ -1,0 +1,14 @@
+package test;
+
+public class Test {
+	
+	public static void main(String []args) {
+		print(1,2,3,4,5);
+	}
+	
+	public void print(int ... dates) {
+		for (int date : dates) {
+			System.out.println(date);
+		}
+	}
+}

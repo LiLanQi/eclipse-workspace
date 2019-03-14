@@ -1,0 +1,33 @@
+package test;
+
+public class Student extends Human{
+
+	
+
+
+
+	int age = 111;
+	
+	
+
+//	String name = "wanbadan";
+//	
+//	{
+//		System.out.println(this.name);
+//	}
+//	
+//	//在执行构造方法时对象已经存在，只是此时的成员变量的值为默认值或初始值
+//	public Student(String name) {
+//		this.name = name;
+//		System.out.println(this.name);
+//	}
+//	
+//	public static void main(String[] args) {
+//		Student student = new Student("xiaoqiang");
+//		System.out.println(student);
+//	}
+	
+	public static void main(String[] args) {
+		new Student().walk("小明");;
+	}
+}

@@ -1,0 +1,5 @@
+package com.lilanqi.servlet;
+
+public class DeleteGoodsServlet extends BaseServlet{
+
+}

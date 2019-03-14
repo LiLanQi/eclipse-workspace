@@ -1,0 +1,12 @@
+package test;
+
+public class Whale extends Mammal{
+	
+	public void move() {
+		System.out.println("¾¨Óã¿¿÷¢ÒÆ¶¯¡£¡£¡£¡£¡£");
+	}
+	
+	public static void main(String[] args) {
+		new Whale().move();
+	}
+}

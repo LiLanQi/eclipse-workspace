@@ -1,0 +1,8 @@
+package com.lilanqi.servlet;
+
+import javax.servlet.annotation.WebServlet;
+
+@WebServlet("/deleteGoods.do")
+public class DeleteGoodsServlet extends BaseServlet{
+
+}

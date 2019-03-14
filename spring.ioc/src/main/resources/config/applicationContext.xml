@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+               http://www.springframework.org/schema/beans/spring-beans.xsd
+               http://www.springframework.org/schema/context
+               http://www.springframework.org/schema/context/spring-context.xsd ">
+
+	<!-- 
+	spring 对于每一个java类，都作为bean
+	bean标签 引入java类
+		属性class 配置javabean类位置：包名+类名
+		id:唯一标识，可以通过id值来获取对象
+		init-method:当对象被spring容器初始化时，调用的初始化方法
+	 -->
+	<bean id="apple" class="com.zzxtit.spring.ioc.first.Apple" init-method="init" destroy-method="destory">
+		
+	</bean>
+
+
+
+</beans>

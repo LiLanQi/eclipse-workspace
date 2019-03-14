@@ -1,0 +1,12 @@
+package com.zzxtit.spring.aop.proxy;
+
+import org.junit.Test;
+
+public class TestProxy {
+	
+	@Test
+	public void test() {
+		
+	}
+
+}

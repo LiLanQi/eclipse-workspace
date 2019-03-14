@@ -1,0 +1,10 @@
+package test;
+
+public class Human {
+	
+	String name = "∏∏¿‡";
+	
+	public final void walk(String name) {
+		System.out.println(name);
+	}
+}

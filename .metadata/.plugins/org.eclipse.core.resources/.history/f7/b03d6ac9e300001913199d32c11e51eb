@@ -1,0 +1,12 @@
+package com.lilanqi.SpringTest;
+
+public class Apple {
+
+	private String type;
+
+	private String color;
+	
+	public void desc() {
+		System.out.println("apple");
+	}
+}

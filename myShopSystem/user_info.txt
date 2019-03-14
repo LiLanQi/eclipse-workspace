@@ -1,0 +1,8 @@
+表名user_info
+名           类型         长度      小数点   允许空值       主键
+id          int      36          0                      		设置为主键，并且自动递增
+name         varchar      36          0         允许            
+sex          int          11          0		不允许，默认为1
+phone        varchar      11          0         允许
+email        varchar      36          0           允许
+password    varchar    36         0          不允许

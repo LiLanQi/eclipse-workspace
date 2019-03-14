@@ -1,0 +1,15 @@
+package practice;
+
+import java.util.Objects;
+
+public class EqualsTest {
+	
+	public boolean equals(Object otherObject) {
+		if(this == otherObject) return true;
+		if(otherObject == null) return false;
+		if(this.getClass() != otherObject.getClass()) return false;
+		Employee other = (Employee) otherObject;
+		return Objects.equals(name, other.name) && salary == other.salary && Objects.equals(hireDay, other.hireDay);
+		
+	}
+}

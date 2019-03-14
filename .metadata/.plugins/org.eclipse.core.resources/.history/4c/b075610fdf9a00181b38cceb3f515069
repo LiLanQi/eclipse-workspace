@@ -1,0 +1,16 @@
+package com.xt.usrinfo;
+
+import com.xt.usrinfo.IUserInfoDao;
+import com.xt.usrinfo.IUserInfoService;
+
+public class UserInfoService implements IUserInfoService{
+
+	private IUserInfoDao UserInfoDao = new UserInfoDao();
+	
+	@Override
+	public boolean login(String userName, String password) {
+		
+		return UserInfoDao.login(userName, password);
+	}
+
+}

@@ -1,0 +1,13 @@
+package test;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		
+		new Mammal() {
+			void move() {
+				System.out.println("靠qi....");
+			}
+		}.move();
+	}
+}

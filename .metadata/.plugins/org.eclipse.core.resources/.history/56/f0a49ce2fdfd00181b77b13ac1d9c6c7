@@ -1,0 +1,11 @@
+package com.lilanqi;
+
+import org.junit.Test;
+
+public class bb {
+
+	@Test
+	public void printInfo() {
+		System.out.println("junit 测试");
+	}
+}

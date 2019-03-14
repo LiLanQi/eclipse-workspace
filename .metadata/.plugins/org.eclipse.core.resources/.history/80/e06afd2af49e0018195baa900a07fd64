@@ -1,0 +1,35 @@
+package test.temp;
+
+public class Student {
+
+	public String id;
+	public String name;
+	public double score;
+	
+	public Student(String id) {
+		
+		this.id = id;
+	}
+	
+	public Student(String id,String name,double score) {
+		
+		this(id);
+		this.name = name;
+		this.score = score;
+	}
+	
+	@Override
+	public int hashCode() {
+		
+		return id.hashCode();
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		
+		if (obj instanceof Student) {
+			return this.id.equals(((Student)obj).id);
+		}
+		return false;
+	}	
+}

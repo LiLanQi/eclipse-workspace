@@ -1,0 +1,101 @@
+package test.temp;
+
+
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class SetUtil {
+	
+	public Set<Student> set = new HashSet<>();
+	
+	/**
+	 * 添加信息
+	 * 
+	 *@autnor 李晨曦
+	 */
+	public boolean add() {
+		
+		System.out.println("请输入学号");
+		@SuppressWarnings("resource")
+		Scanner scanner = new Scanner(System.in);
+		String id = scanner.nextLine();
+		System.out.println("请输入姓名");
+		scanner = new Scanner(System.in);
+		String name = scanner.nextLine();
+		System.out.println("请输入成绩");
+		scanner = new Scanner(System.in);
+		double score  = scanner.nextDouble();
+		Student student = new Student(id,name,score);
+		return set.add(student);
+	}
+	
+	/**
+	 * 删除数据
+	 * 
+	 *@autnor 李晨曦
+	 */
+	public boolean delete () {
+		
+		System.out.println("请输入要删除学生的学号");
+		@SuppressWarnings("resource")
+		Scanner scanner = new Scanner(System.in);
+		String id = scanner.nextLine();
+		Student student = new Student(id);
+		return set.remove(student);
+	}
+	
+	/**
+	 * 修改数据
+	 * 
+	 *@autnor 李晨曦
+	 */
+	public boolean update() {
+		
+		System.out.println("请输入要修改学生的学号");
+		@SuppressWarnings("resource")
+		Scanner scanner = new Scanner(System.in);
+		String id = scanner.nextLine();
+		Student student = new Student(id);
+		if (set.contains(student)) {
+			System.out.println("请输入要修改学生的姓名");
+			scanner = new Scanner(System.in);
+			String name = scanner.nextLine();
+			System.out.println("请输入要修改学生的成绩");
+			scanner = new Scanner(System.in);
+			double score  = scanner.nextDouble();
+			set.remove(student);
+			student = new Student(id, name, score);
+			return set.add(student);
+		} else {
+			System.out.println("查无此人，无法修改");
+			return false;
+		}
+	}
+	
+	/**
+	 * 查询数据
+	 * 
+	 *@autnor 李晨曦
+	 */
+	public void search() {
+		
+		System.out.println("请输入要查找学生的学号");
+		@SuppressWarnings("resource")
+		Scanner scanner = new Scanner(System.in);
+		String id = scanner.nextLine();
+		Student student = new Student(id);
+		if (set.contains(student)) {
+			for (Student stu : set) {
+				if(student.id.equals(stu.id)) {
+					System.out.println("该学生的学号为"+stu.id);	
+					System.out.println("该学生的姓名为"+stu.name);
+					System.out.println("该学生的成绩为"+stu.score);
+					return;
+				}else continue;
+			}
+		} else {
+			System.out.println("查无此人");
+		}
+	}
+}

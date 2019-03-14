@@ -1,0 +1,11 @@
+package test;
+
+public class Test {
+	public static void main(String []args) {
+		Computer computer = new Computer();
+		int result = computer.add(1,1);
+		System.out.println(result);
+		
+		
+	}
+}

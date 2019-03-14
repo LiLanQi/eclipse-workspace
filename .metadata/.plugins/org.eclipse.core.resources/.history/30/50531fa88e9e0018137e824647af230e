@@ -1,0 +1,11 @@
+package test.temp;
+
+public class UserInfoService implements IUserInfoService{
+	
+	private IUserInfoDao userInfoDao = new UserInfoDao();
+
+	@Override
+	public boolean login(String username, String password) {
+		return userInfoDao.login(username, password);
+	}
+}

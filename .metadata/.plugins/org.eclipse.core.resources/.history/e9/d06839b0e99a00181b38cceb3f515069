@@ -1,0 +1,7 @@
+package com.bd.imp;
+
+
+public interface IUserInfoService {
+	
+	boolean login(String userName,String password);
+}

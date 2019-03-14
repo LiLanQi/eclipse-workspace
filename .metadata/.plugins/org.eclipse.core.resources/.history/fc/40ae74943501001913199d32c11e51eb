@@ -1,0 +1,7 @@
+
+public class junit {
+
+	public void printf() {
+		System.out.println(123);
+	}
+}

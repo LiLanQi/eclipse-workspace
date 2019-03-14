@@ -1,0 +1,8 @@
+package test;
+
+public class Computer {
+	
+	public Object add(int a,int b) {
+		return a+b;
+	}
+}

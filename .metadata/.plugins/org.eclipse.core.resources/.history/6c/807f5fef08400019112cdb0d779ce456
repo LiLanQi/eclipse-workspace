@@ -1,0 +1,5 @@
+package com.zzxtit.spring.aop.xml;
+
+public class TestXMLAOp {
+
+}

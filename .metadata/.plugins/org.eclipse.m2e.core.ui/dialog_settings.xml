@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="com.lilanqi"/>
+			<item value="mavenTest2"/>
+			<item value="com.zzxtit"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="ModelTest"/>
+			<item value="AAAAAAAAAAAAAA"/>
+			<item value="RegistAndLoginTest"/>
+			<item value="MavenTest"/>
+			<item value="MyMavenTest2"/>
+			<item value="MyMavenTest"/>
+			<item value="myServlettest"/>
+			<item value="myservlet"/>
+			<item value="servlet"/>
+			<item value="mavenTest2"/>
+			<item value="ilikeit"/>
+			<item value="mavenTest"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\LiLanQi\eclipse-workspace\spring.ioczzz"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\spring.ioc"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\SpringTest"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\LiLanQi\eclipse-workspace\webmvcframework"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\venus"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\Demo01\yeepayDemo"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\mavenTest"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\java4jTest"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\myShopSystem"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\baiduLogin"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

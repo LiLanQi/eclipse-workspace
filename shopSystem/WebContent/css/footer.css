@@ -1,0 +1,182 @@
+
+			body {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-family: arial, "Lantinghei SC", "Microsoft Yahei";
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			.login-boxtitle {
+				display: block;
+			}
+			
+			.login-boxtitle {
+				max-width: 1000px;
+				margin: 0px auto;
+				height: 60px;
+			}
+			
+			.login-boxtitle img {
+				height: 60px;
+			}
+			
+			.login-banner,
+			.res-banner {
+				width: 100%;
+				height: 470px;
+				background: #fd7a72;
+			}
+			
+			.login-banner,
+			.res-banner {
+				width: 100%;
+				height: 470px;
+				background: #fd7a72;
+			}
+			
+			.login-main,
+			.res-main {
+				max-width: 1000px;
+				height: 470px;
+				margin: 0px auto;
+				position: relative;
+			}
+			
+			.login-banner-bg {
+				display: block;
+				float: left;
+			}
+			
+			.login-box,
+			.login-box2 {
+				width: 100%;
+				max-width: 360px;
+				height: 400px;
+				position: absolute;
+				margin-top: 20px;
+				margin-left: 0px;
+				background: #f8f8f8;
+				right: 2%;
+				padding: 10px 20px;
+			}
+			
+			h3.title {
+				text-align: center;
+				padding: 8px;
+				font-weight: 600;
+			}
+			
+			.clear {
+				clear: both;
+			}
+			
+			.zhongjiankuang {
+				border: 1px solid #bdbdbd;
+				height: 38px;
+				width: 304px;
+				position: relative;
+				margin-bottom: 20px;
+				left: 36px;
+			}
+			
+			.zhongjiantu {
+				position: absolute;
+				width: 37px;
+				height: 37px;
+				border-right: 1px solid #bdbdbd;
+				background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2016-1124/i/pwd-icons-new.png) no-repeat;
+			}
+			
+			.itxt {
+				line-height: 18px;
+				height: 18px;
+				border: 0;
+				padding: 10px 0 10px 50px;
+				width: 254px;
+				overflow: hidden;
+				font-size: 14px;
+				font-family: 宋体;
+			}
+			
+			#anniu {
+				margin-bottom: 10px;
+				position: relative;
+			}
+			
+			.disanfang {
+				padding-left: 20px;
+				padding-right: 20px;
+				line-height: 50px;
+				border-top: 1px solid #f4f4f4;
+				background-color: #fcfcfc;
+			}
+			
+			.disanfang ul {
+				display: block;
+				list-style: none;
+			}
+			
+			.disanfang li {
+				float: left;
+			}
+			
+			.disanfang li a.pdl {
+				display: inline-block;
+				position: relative;
+				padding-left: 24px;
+			}
+			
+			.disanfang li .line {
+				padding: 0 10px;
+			}
+			
+			.disanfang li a.pdl b {
+				width: 19px;
+				height: 18px;
+				display: block;
+				background: url(//misc.360buyimg.com/user/passport/1.0.0/widget/login-form-2016-1124/i/QQ-weixin.png) no-repeat;
+				position: absolute;
+				float: left;
+				left: 0px;
+				top: 16px;
+			}
+			
+			.disanfang li a.pdl b.weixin-icon {
+				background-position: -20px 0;
+			}
+			
+			.disanfang li.zuce {
+				float: right;
+			}
+			
+			.disanfang.zucetu {
+				color: #b61d1d;
+				font-size: 14px;
+			}
+			
+			#footer {
+				padding-bottom: 30px;
+				text-align: center;
+				width: 1210px;
+				font-size: 12px;
+				text-align: center;
+				border-top: solid 1px #e6e6e6;
+				color: #999;
+				padding-bottom: 30px;
+				margin: 0 auto;
+			}
+			
+			#links {
+				padding-top: 30px;
+				padding-bottom: 15px;
+			}
+			
+			#links a {
+				color: #999;
+				margin: 0 10px;
+				text-decoration: none;
+			}

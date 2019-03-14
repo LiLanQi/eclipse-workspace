@@ -1,0 +1,10 @@
+package test;
+
+public class Mammal {
+
+	public void move() {
+		System.out.println("ÕıÔÚÒÆ¶¯......");
+	}
+	
+	
+}

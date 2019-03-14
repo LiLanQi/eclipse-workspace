@@ -1,0 +1,35 @@
+package com.test.two;
+
+public class Test {
+	
+	public static void main(String[] args) {
+////		Color colors[] = Color.values();
+////		for (Color color : colors) {
+////			System.out.println(color.getId()+":"+color.getName());
+////		}
+//		Color.test(Color.GREEN);
+		try {
+			Class clazz = Class.forName("com.test.two.Student");
+			clazz = Student.class;
+			clazz = Integer.class;
+			clazz = Byte.TYPE;
+			clazz = Short.TYPE;
+			clazz = Long.TYPE;
+			clazz = Boolean.TYPE;
+			clazz = Double.TYPE;
+			clazz = Float.TYPE;
+			clazz = Character.TYPE;
+			
+			String[] str = new String[5];
+			clazz = String[].class.getSuperclass();
+			System.out.println(clazz);
+			clazz = new Student().getClass();
+	
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+	}		
+}
+
+

@@ -1,0 +1,15 @@
+package com.zzxtit.spring.aop.xml;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.zzxtit.spring.ioc.Application;
+
+public class TestXMLAOp {
+	
+	private ApplicationContext ioc;
+	
+	public void initIoc() {
+		ioc = new ClassPathXmlApplicationContext("config/applicationContextAop.xml");
+	}
+
+}

@@ -1,0 +1,11 @@
+package test;
+
+public class Mammal {
+
+	double weight = 9.0;
+	
+	public void move() {
+		System.out.println("ÕıÔÚÒÆ¶¯......");
+	}
+	
+}

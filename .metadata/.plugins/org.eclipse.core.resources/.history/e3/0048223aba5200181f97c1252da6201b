@@ -1,0 +1,13 @@
+package test;
+
+public class Test {
+	
+	static int i=10;
+	{
+		i=9;
+		--i;
+	}
+	public static void main(String[] args) {
+		System.out.println(new Test().i);//ÎªÊ²Ã´Êä³ö9
+	}
+}

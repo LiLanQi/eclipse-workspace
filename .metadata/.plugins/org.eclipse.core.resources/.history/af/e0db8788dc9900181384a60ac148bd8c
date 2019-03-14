@@ -1,0 +1,12 @@
+package com.test.csdn;
+
+import java.io.File;
+
+public class Test {
+
+	public static void main(String[] args) {
+		File file = new File("E:") ;
+		file = new File(file,"Program_Files\\apache-tomcat-8.0.32");
+		System.out.println(file.getParent());
+	}
+}

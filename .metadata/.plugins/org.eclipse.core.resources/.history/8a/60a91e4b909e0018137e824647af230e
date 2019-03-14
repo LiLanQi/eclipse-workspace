@@ -1,0 +1,36 @@
+package test.temp;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class SetTest {
+	
+	public static void main(String[] args) {
+//		Set <String> set = new HashSet<>();
+//		set.add("张三");
+//		set.add("李四");
+//		set.add("王五");
+//		Iterator<String> iterator = set.iterator();
+//		while(iterator.hasNext()) {
+//			System.out.println(iterator.next());
+//		}
+//		for (String str : set) {
+//			System.out.println(str);
+//		}
+//		set.clear();
+//		System.out.println(set.isEmpty());
+		
+//		set.add("张三");
+//		set.add(new String("张三"));
+//		Iterator<String> iterator = set.iterator();
+//		while(iterator.hasNext()) {
+//			System.out.println(iterator.next());
+//		}
+		
+		Set<Student> set = new HashSet<>();
+		set.add(new Student("111"));
+		set.add(new Student("222"));
+		System.out.println(set.size());
+	}
+}

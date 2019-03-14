@@ -1,0 +1,8 @@
+package test;
+
+public class Test1 extends Bat{
+
+	public static void main(String[] args) {
+		new Test1().move();
+	}
+}

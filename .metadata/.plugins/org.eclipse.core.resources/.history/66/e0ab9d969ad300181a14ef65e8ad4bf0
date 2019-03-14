@@ -1,0 +1,8 @@
+package com.lilanqi.test;
+
+public class ReflectTest {
+
+	public static void main(String[] args) {
+		Methods[] method = Student.class.getDeclaredMethods();
+	}
+}

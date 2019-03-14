@@ -1,0 +1,21 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+public class stuDao {
+
+	static {
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void Add() {
+		DriverManager.getConnection(PropertiesUtil.getValue("url"), PropertiesUtil.getValue("user_Name"),PropertiesUtil.getValue("password"))
+		Connection connection = null;
+		Statement statement = null;
+		
+	}
+}

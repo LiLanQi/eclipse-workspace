@@ -1,0 +1,16 @@
+import java.lang.reflect.Constructor;
+
+class Student {
+
+}
+
+public class Test3 {
+	public static void main(String[] args) throws Exception {
+		Class<Student> clazz = Student.class;
+		Constructor<?>[] constructorArray = clazz.getDeclaredConstructors();
+		System.out.println(constructorArray.length);//输出1
+		
+		Constructor<Student> constructor = clazz.getDeclaredConstructor();
+		System.out.println(constructor.getName());//输出Student
+	}
+}

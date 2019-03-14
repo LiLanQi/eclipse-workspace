@@ -1,0 +1,17 @@
+package test;
+
+public class OutClass {
+
+	public static void main(String[] args) {
+		
+		/**
+		 * 静态有名内部类
+		 */
+		static class InClass {
+
+			public void printInfo() {
+				System.out.println("我是有名内部类");
+			}
+		}
+	}
+}

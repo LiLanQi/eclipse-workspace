@@ -1,0 +1,19 @@
+package jdbc.test.imp;
+
+import jdbc.test.imp.UserInfoService;
+
+public class Test {
+
+	private static IUserInfoService UserInfoService = new UserInfoService();
+	
+	public static void main(String[] args) {
+		String id  = "111";
+		String password = "111";
+		if(UserInfoService.login(id,password)) {
+			System.out.println("成功");
+		}else {
+			System.out.println("失败");
+		}
+	}
+}
+

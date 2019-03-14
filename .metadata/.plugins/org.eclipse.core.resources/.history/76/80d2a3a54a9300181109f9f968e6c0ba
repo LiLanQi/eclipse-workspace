@@ -1,0 +1,60 @@
+package com.test.two;
+
+import java.io.File;
+import java.lang.annotation.Annotation;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Application {
+
+	static Map< Class,Object>mp = new HashMap<Class,Object>();
+	
+	static {
+		String srcPath = ClassLoader.getSystemResource("").getPath()+"com\\test\\two";
+		System.out.println(srcPath);
+		File srcFile = new File(srcPath);
+		//System.out.println(srcFile);
+		File [] files = srcFile.listFiles();//当前路径下含有的文件
+		
+		for (File file : files) {
+			//2、依据文件名拼接类名——"包名"+类名
+			String className = file.getName();
+			//System.out.println(className);
+			className = "com.test.two."+className.substring(0, className.indexOf("."));
+			try {
+				Class clazz = Class.forName(className);
+				Annotation annotations[] = clazz.getAnnotations();
+				for (Annotation annotation : annotations) {
+					if(annotation instanceof Component) {
+						try {
+							Object obj = clazz.newInstance();
+							mp.put(clazz, obj);
+						} catch (InstantiationException | IllegalAccessException e) {
+							try {
+								throw new InstantiationException(clazz.getName()+"无法创建对象");
+							} catch (InstantiationException e1) {
+								e1.printStackTrace();
+							}
+						}
+					}
+				}
+			} catch (ClassNotFoundException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	public static Object getBean(Class clazz) throws Exception {
+		Object object = clazz.newInstance();
+		if(object==null) {
+			throw new NoSuchBeanDefinitionException("No qualifying bean of type "+clazz.getName()+" available");
+		}
+		return object;
+	}
+	
+	public static void main(String[] args) throws Exception {
+		getBean(Lion.class);
+		//getBean(Tiger.class);
+		
+	}
+}

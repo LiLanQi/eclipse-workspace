@@ -1,0 +1,32 @@
+import java.sql.SQLException;
+
+import org.apache.commons.dbutils.QueryRunner;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class shopDao {
+	
+private QueryRunner queryRunner;
+	
+	@BeforeClass
+	public void init() {
+		queryRunner = new QueryRunner(DBUtil.getDruidDataSource());
+	}
+	
+	public void insert() {
+		
+	}
+	
+	public void delete() {
+		
+	}
+	
+	public void update() {
+		
+	}
+	
+	public void search() {
+		
+	}
+}

@@ -1,0 +1,52 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.util.List" %>
+<%@ page import="Student" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<%
+	Object o = request.getAttribute("stuInfo");
+	Student student = null;
+	if(o != null) {
+		student = (Student) o;
+	}
+	Object obj = request.getAttribute("List");
+	List<Student> list = null;
+	if(obj != null) {
+		list = (List<Student>) list;
+	}
+%>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<div>
+		<h3>学生信息管理</h3>
+		<hr>
+		<table>
+			<tr>
+				<td>学号：</td><td><%=student.getStuNo()%></td>
+			</tr>
+			<tr>
+				<td>姓名：</td><td><%=student.getStuName()%></td>
+			</tr>
+			<tr>
+				<td>性别：</td><td><%=student.getGender()%></td>
+			</tr>
+			<tr>
+				<td>年龄：</td><td><%=student.getAge()%></td>
+			</tr>
+			<tr>
+				<td>分数：</td><td><%=student.getScore()%></td>
+			</tr>
+		</table>
+		<%
+			for(Student stu : list){
+		%>
+		
+		</div>
+	
+	</body>
+</html>

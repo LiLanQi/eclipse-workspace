@@ -1,0 +1,18 @@
+package com.test.csdn;
+
+
+public class Test{
+
+	public static void main(String[] args) {
+		String[] nameArray = { "小王", "小李", "小高" };
+		try {
+			for (int i = 0; i < 4; i++) {
+				System.out.println(nameArray[i]);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			System.out.println("显示完毕！");
+		}
+	}
+}

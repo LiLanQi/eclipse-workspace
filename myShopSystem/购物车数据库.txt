@@ -1,0 +1,8 @@
+create table shopcard(
+	shopcard_id int auto_increment,
+	goods_id int,
+	user_id int,
+	shopcard_num int,
+	shopcard_price DECIMAL,
+	primary key(shopcard_id)
+)

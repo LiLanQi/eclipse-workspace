@@ -1,0 +1,15 @@
+package test;
+
+public class Child {
+
+	int cakeQuality = 4;
+	
+	public static void main(String[] args) {
+		
+		Child xiaoming = new Child();
+		System.out.println(xiaoming.cakeQuality);
+		Child xiaoqiang = new Child();
+		xiaoqiang.cakeQuality = 3;
+		System.out.println(xiaoming.cakeQuality);
+	}
+}

@@ -1,0 +1,9 @@
+package test;
+
+public class Human {
+	
+	String name = "¸¸Àà";
+	
+	public final tem.out.println(name);
+	}
+}

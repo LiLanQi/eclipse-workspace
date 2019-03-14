@@ -1,0 +1,9 @@
+package com.zzxtit.spring.aop.proxy;
+
+import java.lang.reflect.InvocationHandler;
+
+import org.mockito.invocation.Invocation;
+
+public class ServiceProxy implements InvocationHandler{
+
+}

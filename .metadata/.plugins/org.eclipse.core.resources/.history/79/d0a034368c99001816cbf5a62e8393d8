@@ -1,0 +1,12 @@
+package com.test.csdn;
+
+import java.util.Date;
+
+public class Test{
+	
+	public static void main(String[] args) throws NoSuchMethodException {
+		Date date = new Date();
+		date.getHours();
+	}
+	
+}

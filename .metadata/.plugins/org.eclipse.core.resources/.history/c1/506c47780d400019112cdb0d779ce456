@@ -1,0 +1,20 @@
+package com.zzxtit.spring.aop.xml;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
+
+public class LoggerAdvicer {
+
+	public void beforeAdvice(JoinPoint jp) {
+		System.out.println("方法 ：" + jp.getSignature().getName() + "开始执行");
+	}
+	
+	public void afterAdvice(JoinPoint jp) {
+		System.out.println("方法 ：" + jp.getSignature().getName() + "执行结束");
+	}
+	
+	public void aroundAdvice(ProceedingJoinPoint jp) {
+		jp.proceed();
+		System.out.println("方法 ：" + jp.getSignature().getName() + "正在环绕");
+	}
+}

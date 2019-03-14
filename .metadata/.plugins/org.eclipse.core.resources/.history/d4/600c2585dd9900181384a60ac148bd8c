@@ -1,0 +1,17 @@
+package com.test.csdn;
+
+import java.io.File;
+
+public class Test {
+
+	public static void main(String[] args) {
+		File file0 = new File("E:");
+		File file1 = new File("E:\\Program_Files");
+		File file2 = new File("E:\\Program_Files\\apache-tomcat-8.0.32");
+		File file3 = new File("E:\\Program_Files\\apache-tomcat-8.0.32\\bin") ;
+		System.out.println(file0.getParentFile());
+		System.out.println(file1.getParentFile());
+		System.out.println(file2.getParentFile());
+		System.out.println(file3.getParentFile());
+	}
+}

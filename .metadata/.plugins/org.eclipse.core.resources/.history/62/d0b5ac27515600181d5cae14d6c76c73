@@ -1,0 +1,8 @@
+package test;
+
+public class Bat extends Mammal{
+
+	public static void main(String[] args) {
+		new Bat().move();
+	}
+}

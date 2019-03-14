@@ -1,0 +1,45 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class stuDao {
+
+	static {
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void Add(Student student) {
+		Connection connection = null;
+		Statement statement = null;
+		String sql = "insert into student values ('"+ student.getStuNo() +"', '"+ student.getStuName() +"', "+ student.getGender() +", "+ student.getAge() +", "+ student.getScore() +")";
+		try {
+			connection = DriverManager.getConnection(PropertiesUtil.getValue("url"), PropertiesUtil.getValue("user_name"),PropertiesUtil.getValue("password"));
+			statement = connection.createStatement();
+			if(statement.executeUpdate(sql) > 0) {
+				System.out.println("录入学生信息成功");
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			if(statement != null) {
+				try {
+					statement.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+			if(connection != null) {
+				try {
+					connection.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+
+public class mavenTest {
+
+	public static void main(String[] args) {
+		System.out.println("maven Test");
+	}
+	
+	public void printf() {
+		System.out.println(123);
+	}
+}

@@ -1,0 +1,12 @@
+import org.apache.commons.dbutils.QueryRunner;
+import org.junit.Before;
+
+public class shopDao {
+
+	private QueryRunner queryRunner;
+	
+	@Before
+	public void init() {
+		queryRunner = new QueryRunner(DBUtil.getDruidDataSource());
+	}
+}

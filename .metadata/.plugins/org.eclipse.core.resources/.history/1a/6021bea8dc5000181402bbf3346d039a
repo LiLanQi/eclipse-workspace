@@ -1,0 +1,17 @@
+package test;
+
+public class Child {
+
+	static void print() {
+		new Child().print(4);
+	}
+	
+	void print(int a) {
+		System.out.println(a);
+	}
+	
+	public static void main(String[] args) {
+
+		print();
+	}
+}

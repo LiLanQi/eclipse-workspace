@@ -1,0 +1,10 @@
+package test;
+
+public class Human {
+	
+	String name = "¸¸Àà";
+	
+	public Human(int age) {
+		System.out.println(age);
+	}
+}

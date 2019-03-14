@@ -1,0 +1,23 @@
+package com.test.csdn;
+
+
+
+/**
+ * 外部类
+ */
+public class Body {
+
+	/**
+	 * 静态有名内部类
+	 */
+	public static class Heart{
+
+		public void beat(){
+			System.out.println("正在跳动...");
+		}
+	}
+}
+
+
+
+

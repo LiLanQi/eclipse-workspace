@@ -1,0 +1,15 @@
+package com.lilanqi;
+
+import org.junit.Test;
+
+public class bb {
+
+	public static void main(String[] args) {
+		System.out.println("asadsd");
+	}
+	
+	
+	public void printInfo() {
+		System.out.println("junit 测试");
+	}
+}

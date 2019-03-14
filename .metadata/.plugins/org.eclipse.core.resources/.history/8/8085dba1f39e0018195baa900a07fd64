@@ -1,0 +1,57 @@
+package com.homework.b.jihe;
+
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		SetUtil set = new SetUtil();
+		System.out.println("请选择要使用的功能");
+		System.out.println("1、添加\n2、删除\n3、修改\n4、查询\n0、退出");
+		@SuppressWarnings("resource")
+		Scanner scanner = new Scanner(System.in);
+		int key = scanner.nextInt();
+		while (true) {
+			switch (key) {
+			case 1:{
+				if(set.add()) {
+					System.out.println("添加成功！！！");
+				}else {
+					System.out.println("添加失败，请重试");
+				}
+				break;
+			}
+			case 2:{
+				if(set.delete()) {
+					System.out.println("删除成功！！！");
+				}else {
+					System.out.println("删除失败，请重试");
+				}
+				break;
+			}
+			case 3:{
+				if(set.update()) {
+					System.out.println("修改成功！！！");
+				}else {
+					System.out.println("修改失败，请重试");
+				}
+				break;
+			}
+			case 4:{
+				set.search();
+				break;
+			}
+			case 0:return;
+			default:{
+				System.out.println("请输入正确指令");
+				break;
+			}
+			}
+			System.out.println("请选择要使用的功能");
+			System.out.println("1、添加\n2、删除\n3、修改\n4、查询\n0、退出");
+			scanner = new Scanner(System.in);
+			key = scanner.nextInt();
+		}
+	}
+}

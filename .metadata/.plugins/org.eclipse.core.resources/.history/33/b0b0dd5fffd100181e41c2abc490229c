@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- 
+tomcat jboss jetty
+webLogic websphere 
+
+
+
+ -->
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<%
+
+//final javax.servlet.jsp.PageContext pageContext;
+//javax.servlet.http.HttpSession session = null;
+//final javax.servlet.ServletContext application;
+//final javax.servlet.ServletConfig config;
+//javax.servlet.jsp.JspWriter out = null;
+//final java.lang.Object page = this;
+//javax.servlet.http.HttpServletRequest request
+//javax.servlet.http.HttpServletResponse response
+
+
+out.print(request.getParameter("username"));
+//request
+
+%>
+<body>
+<form action="test.jsp" method="get">
+	<input type="text" name="username">
+	<input type="submit" value="提交">
+</form>
+</body>
+</html>

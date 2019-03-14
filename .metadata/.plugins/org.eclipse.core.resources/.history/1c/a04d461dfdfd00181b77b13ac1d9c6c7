@@ -1,0 +1,8 @@
+package nyny;
+
+public class aa {
+
+	public void mm() {
+		System.out.println(123);
+	}
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="CleanDialogSettings">
+		<item value="581" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="452" key="DIALOG_HEIGHT"/>
+		<item value="670" key="DIALOG_X_ORIGIN"/>
+		<item value="214" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\LiLanQi\eclipse-workspace\StudentInfoManage"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\SpringTest"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\mavenTest"/>
+			<item value="E:\workSpaces\shopSystem"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\amz_02_adp\two"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\amz_02_adp\one"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\filterTest1"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\orcl"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\Java-Demo\Java-Demo"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\Java-Sdk"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\Java-Demo"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\sendCheckCode"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\Java-SDK-1.0"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\Demo01"/>
+			<item value="C:\Users\LiLanQi\eclipse-workspace\demo2"/>
+			<item value="E:\课件\00 第一堂课\访问权限研究\04 protected"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.emf.codegen.ecore.ui.wizardCategory"/>
+			<item value="org.eclipse.jst.ejb.ui"/>
+			<item value="org.eclipse.buildship.ui.creationwizards"/>
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.m2e"/>
+			<item value="org.eclipse.wst.web.ui"/>
+		</list>
+	</section>
+	<section name="BasicNewProjectResourceWizard">
+	</section>
+</section>

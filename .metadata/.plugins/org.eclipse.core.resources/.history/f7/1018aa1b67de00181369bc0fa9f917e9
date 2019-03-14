@@ -1,0 +1,58 @@
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.beanutils.BeanUtils;
+
+@WebServlet("/myShopMachine")
+public class ShopServlet extends BaseServlet{
+	
+	static List<Goods> list = new ArrayList<Goods>();
+	
+	
+	public void add(HttpServletRequest request, HttpServletResponse response) {
+		Goods goods = new Goods();
+		Map<String,String[]> mp = request.getParameterMap();
+		try {
+			BeanUtils.populate(goods, mp);
+		} catch (IllegalAccessException | InvocationTargetException e) {
+			e.printStackTrace();
+		}
+		System.out.println("调用populate后的goods》》》》》  "+goods);
+		shopDao sdao = new shopDao();
+		Goods newGoods = sdao.add(goods);
+		System.out.println("调用sdao后的goods》》》》》  "+newGoods);
+		boolean flag = false;
+		for (int i = 0; i < list.size(); i++) {
+			System.out.println(request.getParameter("goodsId")+">>>>>"+list.get(i).getGoodsId());
+			if (request.getParameter("goodsId").equals(list.get(i).getGoodsId())) {
+				System.out.println("进入");
+				flag = true;
+				newGoods.setGoodsNumber(Integer.parseInt(request.getParameter("goodsNumber"))+list.get(i).getGoodsNumber());
+				list.remove(i);
+			}
+		}
+		if (!flag) {
+			newGoods.setGoodsNumber(Integer.parseInt(request.getParameter("goodsNumber")));
+		}
+		list.add(newGoods);
+		request.getSession().setAttribute("list", list);
+		try {
+			request.getRequestDispatcher("list.jsp").forward(request, response);
+		} catch (ServletException | IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void delete() {
+		list.clear();
+	}
+	
+}

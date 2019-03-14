@@ -1,0 +1,11 @@
+package test;
+
+public class Test11 {
+
+	public static void main(String[] args) {
+		String name = "李岚祺 fym";
+		String str = new String("李岚祺");
+		String addr = "李岚祺";
+		System.out.println(name.substring(0,3));
+	}
+}

@@ -1,0 +1,36 @@
+package test;
+import java.util.Scanner;
+class Main{
+
+	public static void main(String []args){
+		Scanner scan = new Scanner(System.in);
+		int M = scan.nextInt();
+		int N = scan.nextInt();
+		for(int i=N,count=1;count<=N;i++) {
+			if(count%10==0) {
+				System.out.println();
+			}
+			if(count==2) {
+				System.out.print(i);
+				count++;
+			}
+			else if(isSuShu(i)) {
+				System.out.print(" "+i);
+				count++;
+			}
+			
+		}
+	
+		
+	}
+	
+	static boolean isSuShu(int number){
+		for(int i=2;i<Math.sqrt(number);i++){
+			if(number%i==0){
+				return false;
+			}
+		}
+		return true;
+	}
+		
+}

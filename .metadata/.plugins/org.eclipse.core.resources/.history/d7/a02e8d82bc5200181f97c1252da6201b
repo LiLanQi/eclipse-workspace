@@ -1,0 +1,16 @@
+package test;
+
+public class Student {
+
+	String name;
+	
+	void doHomework(){
+		System.out.println(this.name+"正在做作业.......");
+	}
+
+	public static void main(String[] args) {
+		Student student = new Student();
+		student.name="王五";
+		student.doHomework();
+	}
+}

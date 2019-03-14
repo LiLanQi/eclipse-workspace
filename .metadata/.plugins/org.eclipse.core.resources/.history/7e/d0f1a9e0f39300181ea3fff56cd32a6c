@@ -1,0 +1,22 @@
+package com.test.csdn;
+
+
+class Mammal {
+
+	public void move() {
+		System.out.println("正在移动......");
+	}
+}
+
+public class Sea {
+
+	Mammal whale = new Mammal() {//调用Mammal中的无参构造方法
+
+		
+	};
+	
+	public static void main(String[] args) {
+		
+	}
+}
+

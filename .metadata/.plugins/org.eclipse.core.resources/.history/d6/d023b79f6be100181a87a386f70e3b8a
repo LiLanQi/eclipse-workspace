@@ -1,0 +1,18 @@
+package com.lilanqi.order;
+
+import java.math.BigDecimal;
+
+public class OrderItem {
+	
+	private int id;
+	
+	private int orderNo;
+
+	private String barCode;
+	
+	private String goodsName;
+	
+	private BigDecimal price;
+	
+	private int goodsCount;
+}

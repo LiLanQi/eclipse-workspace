@@ -1,0 +1,8 @@
+package com.zzxtit.spring.aop.xml;
+
+public class LoggerAdvicer {
+
+	public void beforeAdvice(JoinPoint jp) {
+		
+	}
+}

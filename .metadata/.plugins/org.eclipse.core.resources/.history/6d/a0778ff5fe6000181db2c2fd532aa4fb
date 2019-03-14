@@ -1,0 +1,27 @@
+package test;
+
+public class InsertionSearch {
+
+	public static void main(String[] args) {
+		
+		int array[] = {1,2,6,7,2,9,12,2};
+		for(int i=1;i<array.length;i++) {
+			int WillSortDate = array[i];
+			int j=0;
+			int k=0;
+			for(;j<i;j++) {
+				if(WillSortDate<array[j]) {
+					k=j;
+					break;
+				}
+			}
+			for(j=i;j>k;j--) {
+				array[j] = array[j-1];
+			}
+			array[k] = WillSortDate;
+		}
+		for (int i : array) {
+			System.out.println(i);
+		}
+	}
+}

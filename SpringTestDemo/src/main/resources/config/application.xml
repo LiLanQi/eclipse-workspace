@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+               http://www.springframework.org/schema/beans/spring-beans.xsd
+               http://www.springframework.org/schema/context
+               http://www.springframework.org/schema/context/spring-context.xsd ">
+               
+<!-- <bean id = "apple" class = "com.lilanqi.test.Apple" init-method="init" destroy-method="desc" scope = "singleton">
+	<property name="color" value = "red"></property>
+	<property name="type" value = "红富士"></property>
+</bean> -->
+
+<!-- <bean id = "apple" class = "com.lilanqi.test.Apple" init-method="init" destroy-method="desc" scope = "singleton">
+	<constructor-arg index="0" value = "白富士"></constructor-arg>
+	<constructor-arg index="1" value = "白色"></constructor-arg>
+</bean> -->
+
+<!-- <bean id = "apple" class = "com.lilanqi.test.Apple" init-method="init" destroy-method="desc" scope = "singleton">
+	<constructor-arg type="String" value = "黑富士"></constructor-arg>
+	<constructor-arg type="String" value = "黑色"></constructor-arg>
+</bean> -->
+
+<!-- <bean id = "apple" class = "com.lilanqi.test.Apple" init-method="init" destroy-method="desc" scope = "singleton">
+	<property name="location">
+		<value><![CDATA[<img src="http://localhost:9000/teste.img" />]]></value>
+	</property>
+</bean> -->
+
+<!-- <bean id = "banana" class = "com.lilanqi.test.Banana" init-method="init" destroy-method="desc" scope = "prototype"></bean>
+ -->
+ 
+ 	<bean id = "teacher" class = "com.lilanqi.test.Teacher">
+ 		<property name="teaName" value = "老高"></property>
+ 	</bean>
+ 	
+ 	<!-- <bean id = "student" class = "com.lilanqi.test.Student">
+ 		<property name="teacher">
+ 			<bean class = "com.lilanqi.test.Teacher" >
+ 				<property name="teaName" value = "老王"></property>
+ 			</bean>
+ 		</property>
+ 		<property name="stuName" value="张三"></property>
+ 	</bean> -->
+ 	
+ 	<bean id = "student" class = "com.lilanqi.test.Student">
+ 		<property name="stuName" value = "lilanqi"></property>
+ 		<property name="teacher" ref = "teacher"></property>
+ 	</bean>
+</beans>

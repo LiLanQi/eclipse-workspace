@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+               http://www.springframework.org/schema/beans/spring-beans.xsd
+               http://www.springframework.org/schema/context
+               http://www.springframework.org/schema/context/spring-context.xsd ">
+
+	<!-- 
+	spring 对于每一个java类，都作为bean
+	bean标签 引入java类
+		属性class 配置javabean类位置：包名+类名
+		id:唯一标识，可以通过id值来获取对象
+		init-method:当对象被spring容器初始化时，调用的初始化方法
+		
+		
+		
+		可以通过property标签向bean的属性注入对应的值！ 此属性必须有对应的setter方法。
+		通过value 属性或者value标签注入的都为String 或者基本数据类型， 如果需要注入引用类型则使用ref
+	<bean id="apple" class="com.zzxtit.spring.ioc.first.Apple" init-method="init" destroy-method="destory" scope="prototype">
+		<property name="color" value="红色"></property>
+		<property name="color"><value>红色</value> </property>
+	</bean>
+	 -->
+	 
+	 <!-- 
+	 	通过构造器向bean对象注入属性值
+	 	constructor-arg
+	 		两种方法注入属性值：
+	 		1>通过参数的次序
+	 <bean id="apple" class="com.zzxtit.spring.ioc.first.Apple">
+	 	<constructor-arg index="0" value="红富士"></constructor-arg>
+	 	<constructor-arg index="1" value="红色的"> </constructor-arg>
+	 </bean>
+	 		
+	 		2>通过参数类型：
+	 <bean id="apple" class="com.zzxtit.spring.ioc.first.Apple">
+	 	<constructor-arg type="String" value="红富士"></constructor-arg>
+	 	<constructor-arg type="String" value="红色的"> </constructor-arg>
+	 </bean>
+	 		3>通过参数的名称：
+	 <bean id="apple" class="com.zzxtit.spring.ioc.first.Apple">
+	 	<constructor-arg name="type" value="红富士"></constructor-arg>
+	 	<constructor-arg name="color" value="红色的"> </constructor-arg>
+	 </bean>
+	  -->
+	 
+	
+	<!-- 
+	如果被管理的Bean没有配置ID属性，则通过其全类名获取。
+	
+	
+	scope属性：
+	如果没有配置scope，默认值为：singleton 则表示当前类为单例模式,在IOC容器初始化时实例化对象
+	当scope的值为prototype时，为多例模式，在被使用时被创建对象。
+	 -->
+	<bean class="com.zzxtit.spring.ioc.first.Banana" init-method="init" destroy-method="destory"></bean>
+
+	<!-- 
+		如果向bean属性注入的值包含特殊符号：
+	 -->
+	<bean id="goods" class="com.zzxtit.spring.ioc.first.Goods">
+		<property name="desc" >
+			<value><![CDATA[<img src="http://localhost:9000/teste.img" />]]></value>
+		</property>
+	</bean>
+	
+	<!-- 
+		
+		注入时通过ref注入其他对象的引用
+	<bean id="student" class="com.zzxtit.spring.ioc.first.Student">
+		<property name="teacher" ref="teacher"></property>
+		<property name="stuName" value="张三"></property>
+	</bean>
+	
+		注入内部类对象：
+		
+	 -->
+	<bean id="student" class="com.zzxtit.spring.ioc.first.Student">
+		<property name="teacher">
+			<bean class="com.zzw'w'w'w'w'w'wxtit.spring.ioc.first.Teacher">
+				<property name="teaName" value="老高"></property>
+			</bean>
+		</property>
+		<property name="stuName" value="张三"></property>
+	</bean>
+	
+	
+	
+	<bean id="teacher" class="com.zzxtit.spring.ioc.first.Teacher">
+		<property name="teaName" value="王滔"></property>
+	</bean>
+	
+	
+	
+</beans>

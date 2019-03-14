@@ -1,0 +1,12 @@
+<classpath>
+  <container id="DBTest!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="C:/Users/LiLanQi/eclipse-workspace/DBTest/WebContent/WEB-INF/lib/commons-dbutils-1.7.jar">
+      <source-attachment-path>/DBTest/WebContent/WEB-INF/lib/commons-dbutils-1.7-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="shopSystem!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="C:/Users/LiLanQi/eclipse-workspace/shopSystem/WebContent/WEB-INF/lib/commons-dbutils-1.7.jar">
+      <source-attachment-path>C:/Users/LiLanQi/eclipse-workspace/shopSystem/WebContent/WEB-INF/lib/commons-dbutils-1.7-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+</classpath>
